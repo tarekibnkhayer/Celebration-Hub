@@ -1,10 +1,13 @@
-import Header from "../shared/Header";
+
+import Offer from "./Offer";
+import Navbar from "../shared/Navbar";
 
 
 const Home = () => {
     return (
         <div>
-            <Header></Header>
+            <Offer></Offer>
+            <Navbar></Navbar>
         </div>
     );
 };
