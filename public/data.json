@@ -1,0 +1,53 @@
+{
+    "categories": [
+      {
+        "id": 1,
+        "name": "Weddings",
+        "image": "https://i.ibb.co/FK01Q6y/pexels-skg-photography-6685151.jpg",
+        "price": "$10,000",
+        "short_description": "Elegance and love woven into every detail.",
+        "details": "Embark on your journey of marital bliss with our exquisite wedding packages. We understand the significance of this momentous day, and our offerings are designed to make it truly unforgettable. Your dream wedding begins with a choice of stunning venues that set the perfect backdrop for your love story. Our expert team will work closely with you to curate personalized decor that reflects your unique style and vision. Indulge in a culinary experience like no other with our gourmet catering options, ensuring that every bite is a delight. Capture the magic with our professional photography services, preserving the precious moments for a lifetime. Our dedicated event coordination ensures that every detail is flawlessly executed, allowing you to savor every moment of your special day. Trust us to weave elegance, romance, and joy into the tapestry of your wedding day, creating memories that last a lifetime."
+      },
+      {
+        "id": 2,
+        "name": "Birthday Parties",
+        "image": "https://i.ibb.co/WPX2jvY/start-blowing-first-make-wish.jpg",
+        "price": "$1,500",
+        "short_description": "Celebrate milestones with joy and festivities.",
+        "details": "Let the joyous celebrations begin! Our birthday party packages are crafted to turn your special day into a memorable extravaganza. Choose from a variety of themed decor options that add a personalized touch to your party venue. Our entertainment offerings ensure that the atmosphere is filled with laughter and delight. Indulge in delicious custom cakes that not only look stunning but also taste divine. Whether it's a milestone birthday or a casual gathering, our packages cater to all ages and preferences. Immerse yourself in a vibrant and joyful ambiance, surrounded by loved ones. From the initial planning stages to the final moments of the celebration, we are here to make your birthday unforgettable."
+      },
+      {
+        "id": 3,
+        "name": "Anniversaries",
+        "image": "https://i.ibb.co/QcMg4JX/jason-goodman-Nd-Z08c-zu0c-unsplash.jpg",
+        "price": "$3,000",
+        "short_description": "Commemorate years of love and togetherness.",
+        "details": "Celebrate the beautiful journey of your love with our anniversary packages, designed to encapsulate the essence of your enduring commitment. Choose from a selection of romantic venues that create the perfect setting for your anniversary celebration. Our gourmet dining experience is curated to delight your palate, offering a culinary journey that mirrors the richness of your relationship. Enjoy the magic of live music that adds a harmonious touch to the atmosphere. Every detail, from personalized touches to thoughtful surprises, is meticulously planned to ensure your anniversary celebration is a true reflection of your love story. Let us take care of the intricacies while you revel in the joy of togetherness."
+      },
+      {
+        "id": 4,
+        "name": "Engagement Parties",
+        "image": "https://i.ibb.co/2YFcFSc/daniel-gutko-k-V8c-1-Yv-Tzs-unsplash.jpg",
+        "price": "$2,000",
+        "short_description": "Begin your journey to forever with a joyous celebration.",
+        "details": "Kickstart your journey to forever with a stylish and joyous engagement party. Our packages are tailored to provide you with a chic and personalized celebration that sets the stage for the beautiful chapters ahead. Choose from an array of stylish decor options that reflect your unique style and love story. Our live entertainment offerings ensure that the celebration is filled with laughter, music, and joy. Indulge in delightful refreshments that cater to your tastes and preferences. The atmosphere is crafted to be both intimate and celebratory, allowing you to share this special moment with your closest friends and family. Let us take care of the details while you bask in the joy of your engagement."
+      },
+      {
+        "id": 5,
+        "name": "Retirement Parties",
+        "image": "https://i.ibb.co/LxHbq18/random-institute-OBXj-Qtturqk-unsplash.jpg",
+        "price": "$1,200",
+        "short_description": "Bid farewell to a career with joy and nostalgia.",
+        "details": "Celebrate a well-deserved retirement with our carefully crafted packages that blend joy, nostalgia, and heartfelt moments. Choose from warm and inviting venues that provide the perfect backdrop for this significant milestone. Our packages include thoughtful speeches and personalized mementos that capture the essence of a fulfilling career. The atmosphere is designed to be both reflective and celebratory, allowing the retiree to reminisce about the past while embracing the exciting journey ahead. From the initial planning stages to the final farewell, our team is dedicated to ensuring that every detail is executed flawlessly. Bid farewell to a career with a celebration that honors the past and embraces the future."
+      },
+      {
+        "id": 6,
+        "name": "Baby Shower",
+        "image": "https://i.ibb.co/rFMZC56/kaushal-mishra-p76-Uiv-R30oo-unsplash.jpg",
+        "price": "$800",
+        "short_description": "Welcome the newest member with love and anticipation.",
+        "details": "Celebrate the joyous anticipation of a new life with our charming baby shower packages. Immerse yourself in an atmosphere filled with love, laughter, and delightful moments as you await the arrival of the newest member of your family. Our adorable decor options create a whimsical setting that reflects the joy of impending parenthood. Engage in fun and heartwarming games that bring together friends and family. Indulge in delicious treats crafted to suit the occasion, including custom desserts that add a sweet touch to the celebration. The mom-to-be is the star of the day, and our cozy atmosphere ensures she feels cherished and celebrated. Let us take care of the details, allowing you to focus on the excitement of welcoming your bundle of joy."
+      }
+    ]
+  }
+  

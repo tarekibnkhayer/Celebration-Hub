@@ -4,10 +4,10 @@ import './Navbar.css'
 
 const Navbar = () => {
     const navLinks = <>
-    <NavLink className="italic" to="/">Home</NavLink>
-    <NavLink className="italic" to="/about">About</NavLink>
-    <NavLink className="italic" to="/register">Register</NavLink>
-    <NavLink className="italic" to="/login">Login</NavLink>
+    <NavLink  to="/">Home</NavLink>
+    <NavLink  to="/about">About</NavLink>
+    <NavLink  to="/register">Register</NavLink>
+    <NavLink  to="/login">Login</NavLink>
     </>
     return (
         <div className="navbar mt-4">
