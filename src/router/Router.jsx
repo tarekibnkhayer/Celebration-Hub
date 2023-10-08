@@ -5,6 +5,8 @@ import Root from "../layout/Root";
 import Home from "../pages/home/Home";
 import Login from "../pages/login/Login";
 import Register from "../pages/register/Register";
+import PrivateRoute from "./PrivateRoute";
+import Features from "../pages/home/Features";
   const router = createBrowserRouter([
     {
       path: "/",
@@ -22,6 +24,10 @@ import Register from "../pages/register/Register";
         {
           path: '/register',
           element: <Register></Register>
+        },
+        {
+          path: '/features',
+          element: <PrivateRoute><Features></Features></PrivateRoute>
         }
       ]
     },

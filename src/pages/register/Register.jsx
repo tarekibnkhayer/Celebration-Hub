@@ -1,7 +1,26 @@
+import { useContext } from "react";
 import Navbar from "../shared/Navbar";
 import {NavLink} from 'react-router-dom'
+import { AuthContext } from "../../providers/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
+    const {createUser, updateUserInfo} = useContext(AuthContext);
+    const handleRegistrationSubmit = e => {
+        e.preventDefault();
+        const name = e.target.name.value;
+        const photo = e.target.photo.value;
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        createUser(email, password)
+        .then(() =>  updateUserInfo(name, photo)
+        .then()
+        .catch(),
+        toast("your account is successfully created!"))
+        .catch(err =>  toast(err.message));
+        console.log(email, password, name, photo);
+    }
     return (
         <div>
         <Navbar></Navbar>
@@ -9,7 +28,7 @@ const Register = () => {
 <div className="hero-content flex-col ">
             <p className="text-2xl">Please Register here</p>
 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 ">
-  <form className="card-body ">
+  <form className="card-body" onSubmit={handleRegistrationSubmit}>
     <div className="form-control">
       <label className="label">
         <span className="label-text">Name</span>
@@ -20,7 +39,7 @@ const Register = () => {
       <label className="label">
         <span className="label-text">Photo URL</span>
       </label>
-      <input type='url' name="photo" placeholder="Your Photo URL" className="input input-bordered"  />
+      <input type='url' name="photo" placeholder="Your Photo URL" className="input input-bordered"  required/>
     </div>
     <div className="form-control">
       <label className="label">
@@ -42,6 +61,7 @@ const Register = () => {
 </div>
 </div>
 </div>
+<ToastContainer/>
     </div>
     );
 };
