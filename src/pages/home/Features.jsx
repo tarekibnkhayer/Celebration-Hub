@@ -1,9 +1,10 @@
+import Navbar from "../shared/Navbar";
 
 
 const Features = () => {
     return (
         <div>
-            Hello
+            <Navbar></Navbar>
         </div>
     );
 };

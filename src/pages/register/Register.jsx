@@ -13,13 +13,20 @@ const Register = () => {
         const photo = e.target.photo.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
+        if(password.length < 6){
+         return toast("password should have at least 6 characters");
+        }
+        if(!/[A-Z]/.test(password)){
+          return toast("password should have at least one uppercase character");
+        }
+        if(!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/.test(password)){
+          return toast("please add at least a special character in your password!");
+        }
         createUser(email, password)
-        .then(() =>  updateUserInfo(name, photo)
-        .then()
-        .catch(),
+        .then(() =>  updateUserInfo(name, photo),
         toast("your account is successfully created!"))
         .catch(err =>  toast(err.message));
-        console.log(email, password, name, photo);
+        e.target.reset();
     }
     return (
         <div>

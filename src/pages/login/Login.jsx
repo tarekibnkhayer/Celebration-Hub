@@ -4,9 +4,11 @@ import {NavLink, useLocation, useNavigate }from "react-router-dom"
 import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FcGoogle } from 'react-icons/fc';
+import { GoogleAuthProvider } from "firebase/auth";
 
 const Login = () => {
-    const {signInUser} = useContext(AuthContext);
+    const {signInUser, logInPopup} = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
     const handleLoginSubmit = e => {
@@ -18,10 +20,17 @@ const Login = () => {
        navigate(location?.state? location.state: '')
         )
         .catch(err => toast(err.message));
-        console.log(email, password);
+        e.target.reset();
+    }
+    const handleGoogleLogin = () => {
+      const googleProvider = new GoogleAuthProvider();
+      logInPopup(googleProvider)
+      .then(() => toast("you are successfully logged In"))
+      .catch(err => toast(err.message));
     }
     return (
         <div>
+          <div>
             <Navbar></Navbar>
             <div className="hero ">
   <div className="hero-content flex-col ">
@@ -49,6 +58,11 @@ const Login = () => {
   </div>
 </div>
 <ToastContainer/>
+        </div>
+       <div className="text-center">
+       <p className="text-xl">Login with:</p>
+        <button onClick={handleGoogleLogin}><FcGoogle className="text-2xl"></FcGoogle></button>
+       </div>
         </div>
     );
 };
