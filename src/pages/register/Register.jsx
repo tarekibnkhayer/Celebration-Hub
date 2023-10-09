@@ -19,7 +19,7 @@ const Register = () => {
         if(!/[A-Z]/.test(password)){
           return toast("password should have at least one uppercase character");
         }
-        if(!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/.test(password)){
+        if(!/[!@#$%^&*()_+{}[\]:;<>,.?~\\/-]/.test(password)){
           return toast("please add at least a special character in your password!");
         }
         createUser(email, password)
