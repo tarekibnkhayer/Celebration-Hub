@@ -5,7 +5,7 @@ import { useLoaderData } from "react-router-dom";
 import Service from "./service";
 import Slider from "./Slider";
 import Reviews from "./Reviews";
-import Footer from "./Footer";
+
 
 
 const Home = () => {
@@ -23,7 +23,6 @@ const Home = () => {
             }
             </div>
             <Reviews></Reviews>
-            <Footer></Footer>
         </div>
     );
 };
