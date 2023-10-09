@@ -7,7 +7,7 @@ import Footer from "../pages/home/Footer";
 const Root = () => {
     return (
         <div>
-            <div className="max-w-6xl mx-auto font-poppins">
+            <div className="lg:max-w-6xl md:max-w-xl max-w-sm mx-auto font-poppins">
             <Header></Header>
             <Outlet></Outlet>
         </div>
